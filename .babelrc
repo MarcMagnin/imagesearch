@@ -1,0 +1,15 @@
+{
+  "presets": [
+    "next/babel",
+    "es2015",
+      "react"
+  ],
+  "plugins": [
+       "transform-decorators-legacy",
+      "transform-async-to-generator",
+      "transform-object-rest-spread",
+      "transform-class-properties",
+      "transform-runtime",
+    ["styled-components", { "ssr": true, "displayName": false} ]
+  ]
+}

@@ -1,0 +1,45 @@
+/* Modal Effect Blur */
+
+.modal.in .modal-dialog{
+transform: translateX(-50%) translateY(-50%);
+}
+
+.modal-dialog{
+    position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 50%;
+	max-width: 630px;
+	min-width: 320px;
+	height: auto;
+	z-index: 2000;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.modal.fade.in .modal-dialog{
+	transform: translateX(-50%) translateY(-50%);
+}
+
+
+.modal.fade .modal-dialog{
+	transform: translateX(-50%) translateY(-55%);
+}
+
+/* Blur the background */
+.modal-open > #__next{
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    filter: blur(2px);
+}
+
+.modal-backdrop{
+	background: rgba(216, 216, 216, 0.5);
+	opacity: 1;
+}
+
+.modal-content{
+	-webkit-box-shadow: none; 
+	box-shadow: none; 
+	border: none;
+	border-radius: 4px;
+}
